@@ -51,7 +51,7 @@ The dataset contains **22,424 training images** and **7,970 test images**, label
 ## 🔎 **Exploratory Data Analysis (EDA)**
 ### **3.1 Data Visualization**
 
-https://github.com/user-attachments/assets/989b3961-e010-4fb0-9cb8-8cddfaa6abe2)
+https://github.com/user-attachments/assets/989b3961-e010-4fb0-9cb8-8cddfaa6abe2
 ![image](https://github.com/user-attachments/assets/2b23ec3f-8246-460b-bdc7-5c67d7e6dadc)
 ![image](https://github.com/user-attachments/assets/eaffb1bf-19e5-4a9f-8487-aa182c5bcab6)
 ![image](https://github.com/user-attachments/assets/d0b29433-26ae-4aa0-80b3-d7fc80f08238)
