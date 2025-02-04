@@ -88,11 +88,9 @@ The dataset contains **22,424 training images** and **7,970 test images**, label
 ### **4.2 Model Architecture Comparisons**
 | Model | Accuracy | Precision | Recall | F1-Score |
 |--------|------------|--------|-----------|---------|
-| Logistic Regression | 68% | 65% | 63% | 64% |
 | CNN (Custom) | 82% | 78% | 79% | 78% |
 | **ResNet50 (Pretrained)** | **91%** | **90%** | **89%** | **90%** |
 | **EfficientNet-B3** | **93%** | **92%** | **91%** | **92%** |
-| **Ensemble Model** | **95%** | **94%** | **93%** | **94%** |
 ![image](https://github.com/user-attachments/assets/332f4e66-66c5-4380-88be-eb3e5a594873)
 ![image](https://github.com/user-attachments/assets/bc1fc0a7-b44d-42a5-99f0-90ace5f6d6d0)
 ![image](https://github.com/user-attachments/assets/3ce2b06e-3fe9-4560-9293-014a8da747ad)
@@ -132,7 +130,7 @@ This project successfully developed an **AI-driven distracted driver detection s
 
 ---
 
-💡 **Have questions or suggestions?** Feel free to reach out via [LinkedIn](https://linkedin.com/in/your-profile) or open an issue on GitHub!
+💡 **Have questions or suggestions?** Feel free to reach out or open an issue on GitHub!
 
 🚗 **Drive Safe, Stay Focused!**
 
