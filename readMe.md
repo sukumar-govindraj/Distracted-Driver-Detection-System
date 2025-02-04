@@ -58,7 +58,7 @@ The dataset contains **images categorized into 10 classes**:
 | `c8`        | Hair and makeup |
 | `c9`        | Talking to passenger |
 
-![alt text](image.png)
+
 ---
 
 ## **3. Exploratory Data Analysis (EDA)**
