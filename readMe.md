@@ -1,106 +1,94 @@
-# **StateFarm Distracted Driver Detection Report**
+# **StateFarm Distracted Driver Detection - README**
 
-## **1. Introduction**
+## 🚀 **Project Overview**
 
 ### **1.1 Background**
-
-Distracted driving is a significant contributor to road accidents and fatalities. With the rise of mobile phone usage and other in-car distractions, detecting driver behavior has become crucial for enhancing road safety. **StateFarm’s Distracted Driver Detection Challenge** aims to build an AI-powered system that classifies images of drivers into different distraction categories using computer vision techniques.
+Distracted driving is a major contributor to road accidents, increasing the risk of fatal crashes. With the rise of mobile usage, infotainment systems, and in-car distractions, detecting driver behavior has become crucial for **road safety**. This project is developed using the datset provided by Statefarm's Kaggle competetion, leveraging **deep learning and computer vision** to detect distracted driving behaviors in real-time, providing a scalable solution for **vehicle safety systems**.
 
 ### **1.2 Objectives**
-
-- Develop an **image classification model** that accurately detects driver distractions.
-- Utilize **deep learning techniques** such as **Convolutional Neural Networks (CNNs)** to analyze images.
-- Compare different **model architectures** and **feature extraction methods** for classification.
-- Provide **business recommendations** to reduce distracted driving incidents and improve safety.
+✅ **Develop an AI-powered image classification model** to detect driver distractions.
+✅ **Leverage Convolutional Neural Networks (CNNs)** for feature extraction.
+✅ **Compare performance** across various architectures like **ResNet, EfficientNet, and Ensemble Models**.
+✅ **Provide business recommendations** for enhancing road safety.
 
 ---
 
-## **2. Dataset Description and Structure**
+## 📂 **Dataset Overview**
 
-The dataset consists of labeled images of drivers captured under different scenarios. The goal is to classify each image into one of ten distraction categories.
-
-## How to Reconstruct `Data.zip`
-Since `Data.zip` exceeded GitHub's limit, it was split into three parts.
-
-To merge them back into `Data.zip`:
-
-
-### **Windows**
-    copy /b Data_part_0 + Data_part_1 Data.zip
-
-### **Linux / Mac**
-    cat Data_part_* > Data.zip
-
+The dataset consists of labeled images of drivers engaged in different activities, classified into ten categories.
 
 ### **2.1 Dataset Files**
 
-| File Name                | Description |
-|--------------------------|-------------|
-| `train.csv`              | Contains labeled training images and class annotations. |
-| `test.csv`               | Test set for model evaluation. |
-| `images/train/`          | Folder containing training images. |
-| `images/test/`           | Folder containing test images. |
+| File Name | Description |
+|-----------|-------------|
+| `train.csv` | Contains labeled training images and class annotations. |
+| `test.csv` | Test set for model evaluation. |
+| `images/train/` | Directory containing training images. |
+| `images/test/` | Directory containing test images. |
+
+```
 
 ### **2.2 Data Features**
-
-The dataset contains **images categorized into 10 classes**:
+The dataset contains **22,424 training images** and **7,970 test images**, labeled across **10 classes**:
 
 | Class Label | Description |
 |-------------|------------|
-| `c0`        | Safe driving |
-| `c1`        | Texting (right hand) |
-| `c2`        | Talking on the phone (right hand) |
-| `c3`        | Texting (left hand) |
-| `c4`        | Talking on the phone (left hand) |
-| `c5`        | Adjusting radio |
-| `c6`        | Drinking a beverage |
-| `c7`        | Reaching behind |
-| `c8`        | Hair and makeup |
-| `c9`        | Talking to passenger |
+| `c0` | Safe driving |
+| `c1` | Texting (right hand) |
+| `c2` | Talking on the phone (right hand) |
+| `c3` | Texting (left hand) |
+| `c4` | Talking on the phone (left hand) |
+| `c5` | Adjusting radio |
+| `c6` | Drinking a beverage |
+| `c7` | Reaching behind |
+| `c8` | Hair and makeup |
+| `c9` | Talking to passenger |
+![image](https://github.com/user-attachments/assets/82df0093-3b49-4e00-b368-885f72d4244e)
 
 
 ---
 
-## **3. Exploratory Data Analysis (EDA)**
+## 🔎 **Exploratory Data Analysis (EDA)**
+### **3.1 Data Visualization**
 
-### **3.1 Data Exploration**
+![image](https://github.com/user-attachments/assets/989b3961-e010-4fb0-9cb8-8cddfaa6abe2)
+![image](https://github.com/user-attachments/assets/2b23ec3f-8246-460b-bdc7-5c67d7e6dadc)
+![image](https://github.com/user-attachments/assets/eaffb1bf-19e5-4a9f-8487-aa182c5bcab6)
+![image](https://github.com/user-attachments/assets/d0b29433-26ae-4aa0-80b3-d7fc80f08238)
+![image](https://github.com/user-attachments/assets/0cf1f845-5cc6-4390-acd2-4c0d5a2b3efa)
+![image](https://github.com/user-attachments/assets/5c447859-afb0-46d7-91fe-622b2da99002)
+![image](https://github.com/user-attachments/assets/abf22853-4bf4-4a88-ae9a-c5856004335a)
+![image](https://github.com/user-attachments/assets/c6417221-7c29-4c28-8184-730e4ac4932d)
+![image](https://github.com/user-attachments/assets/fa9a1a37-bb60-41c9-a233-eab2c4ecbb87)
+![image](https://github.com/user-attachments/assets/8b06ff2f-5122-46d5-919c-d093191ec39e)
+![image](https://github.com/user-attachments/assets/6dc6de6e-01c7-42e6-9ca3-00e027932349)
 
-- The dataset contains **22,424 training images** and **7,970 test images**.
-- **Image resolution varies**, requiring standardization for deep learning models.
-- **Class distribution is relatively balanced**, preventing significant bias in training.
-- **Augmentation techniques (flipping, cropping, brightness adjustments) were applied** to improve model generalization.
+![image](https://github.com/user-attachments/assets/989b3961-e010-4fb0-9cb8-8cddfaa6abe2)
 
-### **3.2 Feature Analysis and Visualization**
+### **3.2 Data Insights**
+✅ Image **resolution varies**, requiring **standardization** for model input.
+✅ **Balanced class distribution**, reducing bias in model training.
+✅ **Data augmentation** (flipping, cropping, brightness adjustments) applied for better generalization.
 
-- **Sample images from each class were visualized** to understand variation in poses, lighting, and distractions.
-- **Histogram plots of pixel intensity distributions** revealed variations in lighting conditions.
-- **Principal Component Analysis (PCA) was applied** to identify key visual patterns distinguishing distraction categories.
 
----
 
-## **4. Executive Summary & Insights Deep Dive**
 
-### **4.1 Key Insights from EDA and Model Analysis**
-
-- **Deep learning models (CNNs) significantly outperform traditional image processing techniques** in detecting distracted driving behaviors.
-- **MobileNet and EfficientNet architectures offer faster inference times**, making them suitable for real-time deployment.
-- **Class imbalances (some distractions occur less frequently) were addressed using data augmentation and class weighting techniques.**
-- **Certain distraction types (e.g., texting) are harder to distinguish from safe driving** due to similar hand positions.
-- **Ensemble learning and transfer learning improved model robustness**, especially for small datasets.
-
-### **4.2 Insights Deep Dive**
-
-- **Misclassification analysis** showed that classes `c1` (texting) and `c3` (texting left hand) had overlapping features, making them harder to distinguish.
-- **Feature maps from convolutional layers** indicate that driver hand positions play a critical role in classification.
-- **Training CNNs from scratch yielded lower performance than fine-tuning pre-trained models**, highlighting the importance of transfer learning.
-- **Real-time classification using optimized models can help law enforcement and fleet management monitor distracted driving behavior.**
+📌 **Findings:**
+- Driver **hand positions** are key features for classification.
+- **Misclassification** occurs between similar classes (e.g., `c1` and `c3`).
+- **Principal Component Analysis (PCA)** was applied to distinguish visual patterns in distracted behaviors.
 
 ---
 
-## **5. Results and Recommendations**
+## 🏆 **Executive Summary & Insights Deep Dive**
 
-### **5.1 Model Comparisons**
+### **4.1 Key Model Insights**
+✅ **Deep learning models outperform traditional image processing techniques**.
+✅ **MobileNet and EfficientNet provide the best inference speed** for real-time applications.
+✅ **Ensemble learning improves classification robustness**, especially for small datasets.
+✅ **Class imbalances addressed using augmentation and class weighting techniques**.
 
+### **4.2 Model Architecture Comparisons**
 | Model | Accuracy | Precision | Recall | F1-Score |
 |--------|------------|--------|-----------|---------|
 | Logistic Regression | 68% | 65% | 63% | 64% |
@@ -109,25 +97,44 @@ The dataset contains **images categorized into 10 classes**:
 | **EfficientNet-B3** | **93%** | **92%** | **91%** | **92%** |
 | **Ensemble Model** | **95%** | **94%** | **93%** | **94%** |
 
-- **EfficientNet and ResNet-based models achieved the highest accuracy.**
-- **Ensemble models further improved classification performance by combining predictions from multiple architectures.**
-- **MobileNet was the fastest model, making it ideal for real-time implementation.**
-
-### **5.2 Business Recommendations**
-
-- **Deploy AI-driven distracted driver detection in vehicles** to alert drivers in real-time.
-- **Use real-time monitoring in fleet management** to ensure driver safety in commercial vehicles.
-- **Integrate models into smart dashboards and vehicle cameras** to provide instant feedback to drivers.
-- **Collaborate with law enforcement** to identify high-risk drivers and enforce safer driving policies.
-- **Implement distraction prevention systems** that automatically disable mobile notifications while driving.
+📌 **Findings:**
+- **EfficientNet and ResNet achieved the highest accuracy.**
+- **MobileNet was the fastest**, making it ideal for **real-time detection**.
+- **Fine-tuning pre-trained models significantly improved performance.**
 
 ---
 
-## **6. Conclusion and Future Improvements**
+## 🚘 **Business Recommendations**
 
-- **Deploy the best-performing CNN model in real-world scenarios.**
-- **Optimize inference speed for real-time classification.**
-- **Improve model explainability using attention mechanisms** to highlight key features.
-- **Expand the dataset to include diverse driving environments and lighting conditions.**
-- **Integrate multimodal data (video + sensor inputs) for more accurate detection.**
+### **5.1 Deployment Strategies**
+✅ **Deploy AI-powered distracted driver detection** to alert drivers in real-time.
+✅ **Use real-time monitoring in fleet management** for commercial vehicles.
+✅ **Integrate AI models into vehicle dashboards** for smart feedback loops.
+✅ **Partner with law enforcement** to identify high-risk drivers and enforce safer policies.
+✅ **Implement distraction prevention systems** that disable mobile notifications while driving.
+
+### **5.2 Future Work & Enhancements**
+✅ **Optimize inference speed** for real-time classification.
+✅ **Improve model explainability** using **Grad-CAM visualization**.
+✅ **Expand dataset** to include different lighting conditions and driver demographics.
+✅ **Integrate multimodal data (video + sensors)** for more accurate classification.
+
+---
+
+## 📜 **Conclusion**
+This project successfully developed an **AI-driven distracted driver detection system** using deep learning. With an **accuracy of 95%**, this model can significantly enhance road safety by reducing driver distractions. **Future improvements include real-time deployment on edge devices and integration with vehicle safety systems.**
+
+📌 **For full implementation details, check the [Final Report](docs/final_report.pdf).**
+
+🚀 **Get Started with the Code:** [GitHub Repository](https://github.com/your-repo-link)
+
+📊 **Explore Model Performance:** [Jupyter Notebook](notebooks/model_performance.ipynb)
+
+![Project Summary](sandbox:/mnt/data/distracted_driver_summary.png)
+
+---
+
+💡 **Have questions or suggestions?** Feel free to reach out via [LinkedIn](https://linkedin.com/in/your-profile) or open an issue on GitHub!
+
+🚗 **Drive Safe, Stay Focused!**
 
