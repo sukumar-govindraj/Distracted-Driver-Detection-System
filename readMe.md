@@ -57,13 +57,18 @@ The dataset contains **22,424 training images** and **7,970 test images**, label
 ![image](https://github.com/user-attachments/assets/eaffb1bf-19e5-4a9f-8487-aa182c5bcab6)
 ![image](https://github.com/user-attachments/assets/fa9a1a37-bb60-41c9-a233-eab2c4ecbb87)
 
+### CNN Visualization
+![image](https://github.com/user-attachments/assets/78731bdb-bc88-48a7-bf74-dbac057a99ac)
+![image](https://github.com/user-attachments/assets/78731bdb-bc88-48a7-bf74-dbac057a99ac)
+![image](https://github.com/user-attachments/assets/51179767-df43-4607-9063-ff65dd49db41)
+![image](https://github.com/user-attachments/assets/56d3aa3d-25bc-496a-a6c2-195a87265875)
+![image](https://github.com/user-attachments/assets/53ab5a06-4aaa-4965-bd49-11bda7312525)
+
+
 ### **3.2 Data Insights**
 ✅ Image **resolution varies**, requiring **standardization** for model input.
 ✅ **Balanced class distribution**, reducing bias in model training.
 ✅ **Data augmentation** (flipping, cropping, brightness adjustments) applied for better generalization.
-
-
-
 
 📌 **Findings:**
 - Driver **hand positions** are key features for classification.
@@ -88,6 +93,9 @@ The dataset contains **22,424 training images** and **7,970 test images**, label
 | **ResNet50 (Pretrained)** | **91%** | **90%** | **89%** | **90%** |
 | **EfficientNet-B3** | **93%** | **92%** | **91%** | **92%** |
 | **Ensemble Model** | **95%** | **94%** | **93%** | **94%** |
+![image](https://github.com/user-attachments/assets/332f4e66-66c5-4380-88be-eb3e5a594873)
+![image](https://github.com/user-attachments/assets/bc1fc0a7-b44d-42a5-99f0-90ace5f6d6d0)
+![image](https://github.com/user-attachments/assets/3ce2b06e-3fe9-4560-9293-014a8da747ad)
 
 📌 **Findings:**
 - **EfficientNet and ResNet achieved the highest accuracy.**
