@@ -1,4 +1,5 @@
 # **StateFarm Distracted Driver Detection - README**
+![image](https://github.com/user-attachments/assets/a802f64d-fe9c-49d4-9c70-be2ca4563059)
 
 ## 🚀 **Project Overview**
 
@@ -54,16 +55,7 @@ The dataset contains **22,424 training images** and **7,970 test images**, label
 ![image](https://github.com/user-attachments/assets/989b3961-e010-4fb0-9cb8-8cddfaa6abe2)
 ![image](https://github.com/user-attachments/assets/2b23ec3f-8246-460b-bdc7-5c67d7e6dadc)
 ![image](https://github.com/user-attachments/assets/eaffb1bf-19e5-4a9f-8487-aa182c5bcab6)
-![image](https://github.com/user-attachments/assets/d0b29433-26ae-4aa0-80b3-d7fc80f08238)
-![image](https://github.com/user-attachments/assets/0cf1f845-5cc6-4390-acd2-4c0d5a2b3efa)
-![image](https://github.com/user-attachments/assets/5c447859-afb0-46d7-91fe-622b2da99002)
-![image](https://github.com/user-attachments/assets/abf22853-4bf4-4a88-ae9a-c5856004335a)
-![image](https://github.com/user-attachments/assets/c6417221-7c29-4c28-8184-730e4ac4932d)
 ![image](https://github.com/user-attachments/assets/fa9a1a37-bb60-41c9-a233-eab2c4ecbb87)
-![image](https://github.com/user-attachments/assets/8b06ff2f-5122-46d5-919c-d093191ec39e)
-![image](https://github.com/user-attachments/assets/6dc6de6e-01c7-42e6-9ca3-00e027932349)
-
-![image](https://github.com/user-attachments/assets/989b3961-e010-4fb0-9cb8-8cddfaa6abe2)
 
 ### **3.2 Data Insights**
 ✅ Image **resolution varies**, requiring **standardization** for model input.
