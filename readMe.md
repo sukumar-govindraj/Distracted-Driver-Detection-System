@@ -124,11 +124,9 @@ The dataset contains **22,424 training images** and **7,970 test images**, label
 ## 📜 **Conclusion**
 This project successfully developed an **AI-driven distracted driver detection system** using deep learning. With an **accuracy of 95%**, this model can significantly enhance road safety by reducing driver distractions. **Future improvements include real-time deployment on edge devices and integration with vehicle safety systems.**
 
-📌 **For full implementation details, check the [Final Report](docs/final_report.pdf).**
+🚀 **Get Started with the Code:** [GitHub Repository]((https://github.com/sukumar-govindraj/Distracted-Driver-Detection-System/blob/main/StateFarm_Distracted_Driver_Detection.ipynb))
 
-🚀 **Get Started with the Code:** [GitHub Repository](https://github.com/your-repo-link)
-
-📊 **Explore Model Performance:** [Jupyter Notebook](notebooks/model_performance.ipynb)
+📊 **Explore Model Performance:** [Jupyter Notebook](https://github.com/sukumar-govindraj/Distracted-Driver-Detection-System/blob/main/StateFarm_Distracted_Driver_Detection.ipynb)
 
 ![Project Summary](sandbox:/mnt/data/distracted_driver_summary.png)
 
